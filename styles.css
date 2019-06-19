@@ -1,0 +1,113 @@
+p{
+  font-family: 'Unica One', cursive;
+  color: #E1AD01;
+  border: 1px solid #E1AD01;
+  margin: 3px;
+}
+
+.Space{
+  padding: 10px;
+  margin: 1px;
+}
+
+.CXName{
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  color: #404040;
+  margin: 3px;
+}
+
+.CXTag{
+  text-align: center;
+  font-family: 'Unica One', cursive;
+  color: #404040;
+}
+
+img{
+  display: inline;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  border: 10px solid #404040;
+  margin-left: 10px;
+  border-radius: 50%;
+  filter: drop-shadow(10px 10px 10px #404040);
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(88.2,67.8,0.4, 0,5);
+  transition: all .3s linear;
+}
+
+.tint:hover:before {
+  background: none;
+}
+
+.t1:before {
+  background: rgba(0,0,255, 0.5);
+}
+
+div{
+  border: 10px solid #404040;
+  background-color: #E1AD01;
+  padding: 2px;
+}
+
+@media screen and (max-width: 1440px){
+  img{
+    display: inline;
+    flex-direction: row;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 100px){
+  img{
+    display: inline;
+    flex-direction: column;
+    object-fit: cover;
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  img{
+    display: inline;
+    flex-direction: column;
+    object-fit: cover;
+    width: 800px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 880px){
+  img{
+    display: inline;
+    flex-direction: column;
+    object-fit: cover;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  img{
+    display: inline;
+    flex-direction: column;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 405px;
+    height: 405px;
+  }
+}
