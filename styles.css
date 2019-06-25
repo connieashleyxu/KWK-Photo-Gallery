@@ -1,78 +1,100 @@
-body{
-  background-color: #ffb6c1;
-  border: 1px solid #ffb6c2;
+* {
+  box-sizing: border-box;
 }
 
-p{
-  font-family: 'Unica One', cursive;
-  color: #ffb6c1;
-  margin: 3px;
-}
-
-p:hover {
-  border: #FAE3E3;
-}
-
-div:hover {
-  background-color: #FAE3E3;
-}
-
-h1{
-  padding-top: 150px;
-  color: #E85D75;
+.header {
+  font-family: "Arial";
+  background-color: #6F9283;
+  padding: 30px 40px;
+  color: white;
   text-align: center;
-  font-family: "Caveat";
-  font-size: 80px;
-}
-/* .Space{
-  padding: 10px;
-  margin: 1px;
-} */
-
-.title{
-  text-align: center;
-  font-family: 'Monoton', cursive;
-  color: #E85D75;
-  margin: 3px;
 }
 
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  margin: 15px;
-  font-family: 'Caveat';
-  font-size: 24px;
+.header:after {
+  font-family: "Arial";
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  font-family: "Arial";
   cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
   color: #fff;
-  background-color: #A54657;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #6F9283;
+  color: white;
+}
+
+input {
+  margin: 0;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
 }
 
-.button:hover {
-  background-color: #73313c
-}
-
-.button:active {
-  background-color: #73313c;
-  padding: 15px 25px;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-/* .description{
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
   text-align: center;
-  font-family: 'Unica One', cursive;
-  color: #E85D75;
-} */
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
 
-div{
-  border: 10px solid #E85D75;
-  background-color: #ffb6c1;
-  padding-bottom: 300px;
-
+.addBtn:hover {
+  background-color: #bbb;
 }
